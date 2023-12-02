@@ -4,6 +4,6 @@ LABEL maintainer="Wagner Franchin"
 
 RUN apk update && apk add ca-certificates wget && update-ca-certificates
 
-ADD spring-mvc-test-0.0.1-SNAPSHOT.jar /spring-mvc-test.jar
+ADD target/spring-rest-mysql-0.0.1-SNAPSHOT.jar /spring-rest-mysql.jar
 
 CMD ["java", "-jar", "/spring-rest-mysql.jar"]
